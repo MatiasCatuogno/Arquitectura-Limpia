@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanArchitecture.Application.Interfaces
+namespace CleanArchitecture.Application.Interface
 {
     public interface IAlmacenRepository : IRepositoryBase<Almacen>
     {
