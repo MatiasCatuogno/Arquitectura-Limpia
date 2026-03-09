@@ -8,10 +8,8 @@ namespace CleanArchitecture.Infrastructure
     {
         public static void AddInfrastructureServices(this IServiceCollection services)
         {
-            services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddScoped<IAlmacenRepository, AlmacenRepository>();
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
-
             services.AddScoped<IProductoRepository, ProductoRepository>();
             services.AddScoped<IProveedorRepository, ProveedorRepository>();
             services.AddScoped<IMovimientoInventarioRepository, MovimientoInventarioRepository>();
